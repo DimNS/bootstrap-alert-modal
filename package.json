@@ -1,0 +1,26 @@
+{
+  "name": "bootstrap-alert-modal",
+  "description": "Bootstrap alert and confirm messages using the modal component",
+  "version": "1.0.0",
+  "homepage": "https://github.com/DimNS/bootstrap-alert-modal",
+  "author": "DimNS <dimns@dimns.ru>",
+  "keywords": [
+    "bootstrap-alert-modal",
+    "bootstrap alert",
+    "bootstrap modal",
+    "alert",
+    "bsam"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DimNS/bootstrap-alert-modal.git"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sort": "^2.0.0",
+    "gulp-uglify": "^1.5.4"
+  }
+}
