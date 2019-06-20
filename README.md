@@ -60,39 +60,45 @@ modalFocus               |boolean|`true`
 ## Methods
 
 ## bsam.alert(title, body, code)
-Alert modal window with one close button
 ![bsam.alert](https://github.com/dimns/bootstrap-alert-modal/raw/master/screenshots/alert.png "bsam.alert")
+
+Alert modal window with one close button
 - `title` *{string}* **required** - Title modal window
 - `body` *{string}* **required** - Any html-content
 - `code` *{string}* **required** - Bootstrap background class suffix (primary, success, danger and etc)
 
 ## bsam.success(title, body)
-Fast facade alert modal window with one close button and predefined background code
 ![bsam.success](https://github.com/dimns/bootstrap-alert-modal/raw/master/screenshots/success.png "bsam.success")
+
+Fast facade alert modal window with one close button and predefined background code
 - `title` *{string}* **required** - Title modal window
 - `body` *{string}* **required** - Any html-content
 
 ## bsam.danger(title, body)
-Fast facade alert modal window with one close button and predefined background code
 ![bsam.danger](https://github.com/dimns/bootstrap-alert-modal/raw/master/screenshots/danger.png "bsam.danger")
+
+Fast facade alert modal window with one close button and predefined background code
 - `title` *{string}* **required** - Title modal window
 - `body` *{string}* **required** - Any html-content
 
 ## bsam.warning(title, body)
-Fast facade alert modal window with one close button and predefined background code
 ![bsam.warning](https://github.com/dimns/bootstrap-alert-modal/raw/master/screenshots/warning.png "bsam.warning")
+
+Fast facade alert modal window with one close button and predefined background code
 - `title` *{string}* **required** - Title modal window
 - `body` *{string}* **required** - Any html-content
 
 ## bsam.info(title, body)
-Fast facade alert modal window with one close button and predefined background code
 ![bsam.info](https://github.com/dimns/bootstrap-alert-modal/raw/master/screenshots/info.png "bsam.info")
+
+Fast facade alert modal window with one close button and predefined background code
 - `title` *{string}* **required** - Title modal window
 - `body` *{string}* **required** - Any html-content
 
 ## bsam.confirm(body, confirmButtonText, cancelButtonText, callbackConfirm, callbackCancel, callbackOnOpen)
-Confirm modal window with two buttons and callbacks
 ![bsam.confirm](https://github.com/dimns/bootstrap-alert-modal/raw/master/screenshots/confirm.png "bsam.confirm")
+
+Confirm modal window with two buttons and callbacks
 - `body` *{string}* **required** - Any html-content
 - `confirmButtonText` *{string}* **required** - The text of the button "OK"
 - `cancelButtonText` *{string}* **required** - The text of the button "Cancel
