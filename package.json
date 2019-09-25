@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-alert-modal",
   "description": "Bootstrap alert and confirm messages using the modal component",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "https://github.com/DimNS/bootstrap-alert-modal",
   "author": "DimNS <dimns@dimns.ru>",
   "keywords": [
