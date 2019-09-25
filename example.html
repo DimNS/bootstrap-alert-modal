@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Example</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="pt-5">
+            #bootstrap-alert-modal
+        </h2>
+
+        <div class="pt-3">
+            <h5>General</h5>
+            <button class="btn btn-success" onclick="example.success()">
+                bsam.success()
+            </button>
+            &nbsp;&nbsp;&nbsp;
+            <button class="btn btn-danger" onclick="example.danger()">
+                bsam.danger()
+            </button>
+            &nbsp;&nbsp;&nbsp;
+            <button class="btn btn-warning" onclick="example.warning()">
+                bsam.warning()
+            </button>
+            &nbsp;&nbsp;&nbsp;
+            <button class="btn btn-info" onclick="example.info()">
+                bsam.info()
+            </button>
+            &nbsp;&nbsp;&nbsp;
+            <button class="btn btn-primary" onclick="example.confirm()">
+                bsam.confirm()
+            </button>
+        </div>
+
+        <div class="pt-3">
+            <h5>Manual</h5>
+            <button class="btn btn-secondary" onclick="example.alert()">
+                bsam.alert()
+            </button>
+        </div>
+
+        <div class="pt-3">
+            <h5>Additional</h5>
+            <button class="btn btn-dark" onclick="example.alertMany()">
+                many alert
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="dist/bootstrap-alert-modal.js"></script>
+
+    <script type="text/javascript">
+        var example = {};
+
+        // General
+
+        example.success = function () {
+            bsam.success('Success', '<p>Any <strong>html</strong>-content</p>');
+        };
+
+        example.danger = function () {
+            bsam.danger('Danger', '<p>Any <strong>html</strong>-content</p>');
+        };
+
+        example.warning = function () {
+            bsam.warning('Warning', '<p>Any <strong>html</strong>-content</p>');
+        };
+
+        example.info = function () {
+            bsam.info('Info', '<p>Any <strong>html</strong>-content</p>');
+        };
+
+        example.confirm = function () {
+            var callbackConfirm = function () {
+                bsam.alert('callbackConfirm', 'Confirmed', 'success');
+            };
+            var callbackCancel  = function () {
+                bsam.alert('callbackCancel', 'Canceled', 'danger');
+            };
+            var callbackOnOpen  = function () {
+                bsam.alert('callbackOnOpen', 'Opened', 'info');
+            };
+            bsam.confirm('<p>Any <strong>html</strong>-content</p>', 'OK', 'Cancel', callbackConfirm, callbackCancel, callbackOnOpen);
+        };
+
+        // Manual
+
+        example.alert = function () {
+            bsam.alert('Alert (primary code)', '<p>Any <strong>html</strong>-content</p>', 'primary');
+        };
+
+        // Additional
+
+        example.alertMany = function () {
+            bsam.alert('title', '<p>Any <strong>html</strong>-content</p>', 'success');
+            bsam.alert('title', '<p>Any <strong>html</strong>-content</p>', 'danger');
+        };
+    </script>
+</body>
+</html>
