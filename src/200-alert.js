@@ -1,16 +1,19 @@
 /**
  * Alert
  *
- * @param {string} title Title message
- * @param {string} body  HTML content
- * @param {string} code  Background code (success|danger|warning|info)
+ * @param {string} title   Title message
+ * @param {string} body    HTML content
+ * @param {string} code    Background code (success|danger|warning|info)
+ * @param {object} options Override configuration
  *
  * @type {function}
  *
- * @version 2019-06-18
  * @author  DimNS <dimns@dimns.ru>
+ * @version 2019-09-25
  */
-bsam.alert = function (title, body, code) {
+bsam.alert = function (title, body, code, options) {
+    var config = bsam._getConfig('alert', options);
+
     var modal = $(
         '<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">\n' +
         '    <div class="modal-dialog modal-dialog-centered" role="document">\n' +
@@ -22,8 +25,8 @@ bsam.alert = function (title, body, code) {
         '                ' + body + '\n' +
         '            </div>\n' +
         '            <div class="modal-footer">\n' +
-        '                <button type="button" class="btn ' + bsam.config.alertCloseButtonClass + '" data-dismiss="modal">\n' +
-        '                    ' + bsam.config.alertCloseButtonText + '\n' +
+        '                <button type="button" class="btn ' + config.alertCloseButtonClass + '" data-dismiss="modal">\n' +
+        '                    ' + config.alertCloseButtonText + '\n' +
         '                </button>\n' +
         '            </div>\n' +
         '        </div>\n' +
@@ -36,8 +39,8 @@ bsam.alert = function (title, body, code) {
     $('body').append(modal);
 
     modal.modal({
-        backdrop: bsam.config.modalBackdrop,
-        keyboard: bsam.config.modalKeyboard,
-        focus   : bsam.config.modalFocus
+        backdrop: config.modalBackdrop,
+        keyboard: config.modalKeyboard,
+        focus   : config.modalFocus
     });
 };

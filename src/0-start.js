@@ -3,8 +3,8 @@
  *
  * @type {object}
  *
- * @version 2019-06-18
  * @author  DimNS <dimns@dimns.ru>
+ * @version 2019-09-25
  */
 var bsam = {};
 
